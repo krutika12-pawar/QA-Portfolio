@@ -53,5 +53,4 @@ SauceDemo provides the following test users:
 
 **Password for all users:**
 
-```text
 secret_sauce
