@@ -27,30 +27,56 @@ This project demonstrates:
 
 The following modules are covered in this project:
 
-Module : Description 
-
- Login : Validate user authentication with valid and invalid users,
- Products : Validate product listing and product details,
- Sorting : Validate sorting by name and price,
- Cart : Validate add to cart and remove from cart functionality,
- Checkout : Validate customer information, overview, and order completion,
- Menu : Validate side menu options,
- Logout : Validate successful logout.
+| Module | Description |
+|--------|-------------|
+| Login | Validate user authentication with valid and invalid users |
+| Products | Validate product listing and product details |
+| Sorting | Validate sorting by name and price |
+| Cart | Validate add to cart and remove from cart functionality |
+| Checkout | Validate customer information, overview, and order completion |
+| Menu | Validate side menu options |
+| Logout | Validate successful logout |
 
 
 ## Test Users
 
 SauceDemo provides the following test users:
 
- Username : Purpose 
-
- standard_user : Valid user for normal application flow,
- locked_out_user : User blocked from logging in,
- problem_user : User with known application issues, 
- performance_glitch_user : User with performance delay, 
- error_user : User with functional issues,
- visual_user : User with visual/UI issues.
+| Username | Purpose |
+|----------|---------|
+| standard_user | Valid user for normal application flow |
+| locked_out_user | User blocked from logging in |
+| problem_user | User with known application issues |
+| performance_glitch_user | User with performance delay |
+| error_user | User with functional issues |
+| visual_user | User with visual/UI issues |
 
 **Password for all users:**
 
 secret_sauce
+
+## Results
+
+| Item | Count |
+|------|-------|
+| Requirements | 20 |
+| Test Scenarios | 15 |
+| Test Cases | 52 |
+| Passed | 40 |
+| Failed | 12 |
+| Defects | 12 (2 Critical, 5 Major, 1 Medium, 4 Minor) |
+
+## Project Structure
+
+| Folder | Content |
+|--------|---------|
+| 01-requirements | BRD and Requirements Master |
+| 02-test-plan | Test Plan |
+| 03-test-scenarios | Test Scenarios |
+| 04-test-cases | Test Cases |
+| 05-rtm | Requirements Traceability Matrix |
+| 06-defect-log | Defect Log |
+| 07-test-execution | Test Execution Report |
+| 08-test-summary-report | Test Summary Report |
+| 09-qa-metrics | QA Metrics |
+| 10-screenshots | Defect screenshots |
