@@ -79,4 +79,3 @@ secret_sauce
 | 07-test-execution | Test Execution Report |
 | 08-test-summary-report | Test Summary Report |
 | 09-qa-metrics | QA Metrics |
-| 10-screenshots | Defect screenshots |
