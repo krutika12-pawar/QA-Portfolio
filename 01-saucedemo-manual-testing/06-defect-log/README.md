@@ -11,4 +11,4 @@
 | Medium | 1 |
 | Minor | 4 |
 
-Screenshots for each defect are in the 10-screenshots folder.
+Screenshots for each defect are placed in defect sheet and execution document as well.
