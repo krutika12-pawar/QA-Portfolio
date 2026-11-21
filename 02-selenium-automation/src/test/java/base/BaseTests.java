@@ -9,6 +9,7 @@ import org.openqa.selenium.support.events.EventFiringDecorator;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.BeforeSuite;
 import pages.LoginPage;
 import pages.ProductsPage;
 import utils.EventReporter;
@@ -17,6 +18,7 @@ import java.io.File;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.StandardCopyOption;
+import java.time.Duration;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -26,11 +28,23 @@ public class BaseTests {
     protected WebDriver driver;
     protected LoginPage loginPage;
 
+    @BeforeSuite
+    public void clearOldScreenshots(){
+        File folder = new File("resources/screenshots");
+        File[] files = folder.listFiles((dir, name) -> name.endsWith(".png"));
+        if(files != null){
+            for(File file : files){
+                file.delete();
+            }
+        }
+    }
+
     @BeforeMethod
     public void setUp(){
         WebDriver chrome = new ChromeDriver(getChromeOptions());
         driver = new EventFiringDecorator<>(new EventReporter()).decorate(chrome);
         driver.manage().window().maximize();
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
         goHome();
     }
 
@@ -80,5 +94,7 @@ public class BaseTests {
 //            options.addArguments("--headless=new");
 //        }
         return options;
+
+
     }
 }
