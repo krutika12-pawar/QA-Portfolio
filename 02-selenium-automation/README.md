@@ -48,6 +48,12 @@ mvn test
 mvn test -Dheadless=true
 ```
 
+## Results
+
+All 16 tests passing:
+<img width="711" height="380" alt="TestResult" src="https://github.com/user-attachments/assets/bbb890be-a860-43c8-8f51-61b401385e9a" />
+
+
 ## Learning
 
 I learned Selenium with the **Selenium WebDriver with Java** course by Test Automation University (Applitools) and built this project using the same approach.
