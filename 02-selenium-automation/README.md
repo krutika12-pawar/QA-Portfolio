@@ -15,7 +15,7 @@ This is the automation part of my portfolio. In [Project 1](../01-saucedemo-manu
 | Cart | Add products, remove a product, continue shopping |
 | Checkout | Full purchase with item total, tax and total check, first name required, postcode required |
 
-15 tests in total.
+16 tests in total.
 
 ## Tools
 
